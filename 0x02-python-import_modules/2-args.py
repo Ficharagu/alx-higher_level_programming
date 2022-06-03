@@ -13,5 +13,3 @@ if __name__ == "__main__":
     if number_of_arguments > 1:
         for i in range(1, number_of_arguments):
             print("{}: {}".format(i, argv[i]))
-
-
