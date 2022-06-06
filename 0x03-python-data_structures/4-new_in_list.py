@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-# 4-only_diff_elements.py
+def new_in_list(my_list, idx, element):
+    if idx < 0 or idx > len(my_list) - 1:
+        return (my_list)
 
-
-def only_diff_elements(set_1, set_2):
-    """Return a set of all elements present in only one set."""
-    return (set_1 ^ set_2)
+    copy_list = my_list.copy()
+    copy_list[idx] = element
+    return (copy_list)
